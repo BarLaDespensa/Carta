@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Bar la Despensa</title>
+        <meta author="Raúl Cervera Marín" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport"> 
+        <link rel="icon" href="./favicon.png" type="image/png">
+
+<style>
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color:black;
+      padding: 20px 10px;
+    }
+    
+    .header a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: black;
+      color: gray;
+    }
+    
+    .header a.active {
+      background-image:url("./header-images/bocadillos.jpg");
+        }
+    
+    .header-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+    }
+    </style>
+
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url("./header-images/bocadillos.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+    max-height: 0px;
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax-column {
+    /* The image used */
+    background-image: url("./header-images/bar.jpg");
+   /* Set a specific height */
+    min-height: 400px; 
+    max-height: auto;
+    height: 100%;
+    max-width: 100px;
+    width:50%;
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment:fixed;
+    background-position: left;
+    background-repeat: repeat;
+    background-size: cover;
+    
+
+
+  }
+
+
+  /* TEXTO en HEADER con imagen */
+    .bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: white;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 80px;
+      border: 10px solid #f1f1f1;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 400px;
+      padding: 20px;
+      text-align: center;
+    }
+  
+  </style>
+ 
+<style>
+  /* Bottom foot */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align:initial;
+    margin-left: inherit;
+  }
+  .bar {
+      width: 100%;
+      height: 50px;
+      background: black;
+    }
+  
+    .example1 {
+    background-image: url(./header-images/paper.jpg);
+    background-position:  left top;
+    background-repeat: repeat;
+     padding: 20px;
+}
+  </style>
+
+   <style> 
+        body  {
+        background-color: white;
+      }
+  
+  </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <a href="#default" class="logo" >
+        <img src="./favicon.png"  width="40" height="40" style="vertical-align:bottom">
+        Bar la Despensa</a>
+      <div class="header-right">
+      </div>
+    </div>
+    <div class="parallax"></div>
+    <div class="bg-text">CARTA </div>
+    <div class="bar">This is a bar</div>
+    
+    
+    <div class="example1" style="text-align: center;">
+      <h1 style=" border-bottom:10px solid black;
+      padding-bottom:0px; font-style: oblique;"> Bocadillos </h1>
+    <p>Fish and chips <img src="./alergeno/gluten.png">
+      <img src="./alergeno/pescado.png" style="height:8%;"></p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <h1 style=" border-bottom:10px solid black;
+    padding-bottom:0px; font-style: oblique;"> Bocadillos </h1>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+    <p>dnkdkdkdkdkdkdkdkdkdkd</p>
+  </div>
+     </div>
+
+
+
+     
+        <p  style="text-align: center; background-color: black;padding-top: 50px;padding-bottom: 50px;">
+          <iframe
+        
+        width="700"
+        height="350"
+        frameborder="10" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAIb3Zo5jS-rdbTtrzHjt4GCFfcuznFGk
+          &q=39.4317158+-0.4748089&center=39.4317158,-0.4748089&zoom=15&language=es-ES" allowfullscreen>
+      </iframe>
+    </p>
+    <details class="footer">
+      <summary>
+          Copyright 2020
+      </summary>
+      <p>- by Raúl Cervera Marín. All Rights Reserved</p>
+      <p>All content and graphics on this web site are the property of the owner</p>
+    </details>
+    </head>
+
+    </body>
+    
+
+</html>
+
